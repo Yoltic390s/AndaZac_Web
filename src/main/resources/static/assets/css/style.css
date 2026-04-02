@@ -142,16 +142,39 @@
 }
 
 /* ==========================================================================
-   AJUSTES RESPONSIVOS (CELULARES Y TABLETS)
+   OPTIMIZACIÓN MÓVIL EXTREMA (ANDAZAC)
    ========================================================================== */
-@media (max-width: 991px) {
-    /* Separar las tarjetas de precios cuando se apilan */
-    .pricing-card {
-        margin-bottom: 30px !important;
+@media (max-width: 767px) {
+    /* 1. Limpiar el Inicio (Hero) */
+    .stock-text {
+        display: none !important; /* Ocultamos la palabra de fondo para que no se encime */
     }
-    
-    /* Asegurar que el "Más Rentado" no tape a los demás en celular */
-    .pricing-card.featured {
-        transform: scale(1) !important;
+    .hero__caption h1 {
+        margin-bottom: 15px !important;
+    }
+    .hero-text2.mt-50 {
+        margin-top: 25px !important; /* Subimos un poco el botón */
+    }
+
+    /* 2. Reducir tamaño de imágenes del catálogo */
+    .project-img img {
+        height: 140px !important;
+        object-fit: cover !important; /* Evita que las fotos se deformen */
+        width: 100% !important;
+        border-radius: 8px !important;
+    }
+    .single-project {
+        margin-bottom: 15px !important;
+    }
+    /* Ajustamos el texto para que quepa en 2 columnas */
+    .project-cap {
+        padding: 10px !important;
+    }
+    .project-cap h4 a {
+        font-size: 13px !important;
+        line-height: 1.2 !important;
+    }
+    .plus-btn {
+        display: none !important; /* Ocultamos el botón (+) porque en celular estorba. Haremos la foto clickeable */
     }
 }

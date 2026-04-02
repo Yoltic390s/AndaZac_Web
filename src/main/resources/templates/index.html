@@ -3,29 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Andazac | Renta de Andamios en Zacatecas</title>
+    <title>Andazac | Renta de Andamios y Maquinaria en Zacatecas</title>
 
-
+    <!-- SEO Mejorado y Open Graph para Redes Sociales/WhatsApp -->
     <meta name="description" content="Especialistas en renta y venta de andamios, maquinaria ligera y equipo para construcción en Zacatecas. Seguridad y confianza para tu obra.">
     <meta name="keywords" content="renta de andamios, andamios zacatecas, maquinaria ligera zacatecas, equipo de construcción, revolvedoras, demoledores, apuntalamiento">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Metaetiquetas Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:title" content="Andazac | Renta de Andamios y Maquinaria">
     <meta property="og:description" content="Catálogo de renta de andamios, rompedoras, revolvedoras y equipo para construcción en Zacatecas. ¡Cotiza rápido por WhatsApp!">
-    <meta property="og:image" content="https://andazac.netlify.app/assets/img/logo/og-image.jpg">
-    <meta property="og:url" content="https://andazac.netlify.app">
+    <meta property="og:image" content="https://andazac-catalogo.onrender.com/assets/img/logo/og-image.jpg">
+    <meta property="og:url" content="https://andazac-catalogo.onrender.com">
     <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Andazac | Renta de Equipo para Construcción">
-    <meta name="twitter:description" content="Catálogo de renta de andamios y maquinaria en Zacatecas. ¡Cotiza rápido por WhatsApp!">
-    <meta name="twitter:image" content="https://andazac.netlify.app/assets/img/logo/og-image.jpg">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/png" href="assets/img/logo/favicon.png">
 
-    <!-- CSS -->
+    <!-- CSS Base -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
@@ -36,6 +30,28 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <style>
+        /* Botón Flotante WhatsApp */
+        .whatsapp-flotante { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25D366; color: #FFF !important; border-radius: 50%; text-align: center; font-size: 35px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); z-index: 9999; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+        .whatsapp-flotante:hover { background-color: #1DA851; transform: scale(1.1); }
+
+        /* Ajustes exclusivos para celulares */
+        @media (max-width: 767px) {
+            .whatsapp-flotante { width: 50px; height: 50px; bottom: 20px; right: 20px; font-size: 28px; }
+            .stock-text { display: none !important; } /* Ocultar texto de fondo en Hero */
+            .hero__caption h1 { margin-bottom: 15px !important; }
+            .hero-text2.mt-50 { margin-top: 25px !important; }
+
+            /* Catálogo compacto a 2 columnas */
+            .project-img img { height: 140px !important; object-fit: cover !important; width: 100% !important; border-radius: 8px !important; }
+            .single-project { margin-bottom: 15px !important; }
+            .project-cap { padding: 10px !important; }
+            .project-cap h4 a { font-size: 13px !important; line-height: 1.2 !important; }
+            .plus-btn { display: none !important; } /* Quitar botón + para ahorrar espacio */
+        }
+    </style>
 </head>
 
 <body>
@@ -50,7 +66,6 @@
         </div>
     </div>
 </div>
-<!-- Preloader End -->
 
 <header>
     <div class="header-area header-transparent">
@@ -62,16 +77,16 @@
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="header-info-left">
                                 <ul>
-                                    <li>+52 492 123 4567</li>
+                                    <li>+52 492 123 456</li>
                                     <li>contacto@andazac.com</li>
                                     <li>LUNES A SÁBADO - 8:00 a 18:00</li>
                                 </ul>
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">
-                                    <li><a href="https://wa.me/524922253074" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                                    <li><a href="mailto:"><i class="fas fa-envelope"></i></a></li>
-                                    <li><a href="tel:"><i class="fas fa-phone"></i></a></li>
+                                    <li><a href="https://wa.me/52492123456" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="mailto:contacto@andazac.com"><i class="fas fa-envelope"></i></a></li>
+                                    <li><a href="tel:+52492123456"><i class="fas fa-phone"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -85,8 +100,8 @@
                     <div class="row align-items-center">
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a class="big-logo"><img src="assets/img/logo/ldelogo.png" alt="Andazac Logo" style="max-height: 60px;"></a>
-                                <a class="small-logo"><img src="assets/img/logo/ldelogo.png" alt="Andazac Logo" style="max-height: 40px;"></a>
+                                <a href="index.html" class="big-logo"><img src="assets/img/logo/ldelogo.png" alt="Andazac Logo" style="max-height: 60px;"></a>
+                                <a href="index.html" class="small-logo"><img src="assets/img/logo/ldelogo.png" alt="Andazac Logo" style="max-height: 40px;"></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8">
@@ -95,8 +110,9 @@
                                     <ul id="navigation">
                                         <li><a href="#inicio">Inicio</a></li>
                                         <li><a href="#nosotros">Acerca de nosotros</a></li>
-                                        <li><a href="#productos">Productos</a></li>
+                                        <li><a href="#especialidades">Especialidades</a></li>
                                         <li><a href="#catalogo">Catálogo</a></li>
+                                        <li><a href="#faq">FAQ</a></li>
                                         <li><a href="#contacto">Contacto</a></li>
                                     </ul>
                                 </nav>
@@ -104,7 +120,7 @@
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-3">
                             <div class="header-right-btn f-right d-none d-lg-block">
-                                <a href="https://wa.me/524922253074?text=Hola,%20me%20interesa%20rentar%20andamios" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contáctanos ya</a>
+                                <a href="https://wa.me/52492123456?text=Hola,%20me%20interesa%20rentar%20equipos" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contáctanos ya</a>
                             </div>
                         </div>
                         <div class="col-12">
@@ -131,6 +147,7 @@
                                 </div>
                                 <h1 style="font-size: clamp(45px, 12vw, 100px); font-weight: 900; margin-bottom: 30px; position: relative; z-index: 2;">ANDAZAC</h1>
 
+                                <!-- Esta palabra desaparece en celular gracias al CSS incrustado -->
                                 <div class="stock-text" style="position: absolute; top: 40%; left: -5%; transform: translateY(-50%); z-index: -1; opacity: 0.8;">
                                     <h2 style="font-size: clamp(55px, 15vw, 130px); font-weight: 800; color: #453528; text-transform: uppercase; margin: 0;">Andamios</h2>
                                 </div>
@@ -176,7 +193,7 @@
         </div>
     </section>
 
-    <!-- Lineas de Equipo -->
+    <!-- Especialidades / Líneas de Equipo Start -->
     <div class="services-area1 section-padding30" id="especialidades" style="background: #f7f7fd;">
         <div class="container">
             <div class="row">
@@ -190,7 +207,6 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <!-- Categoria 1 -->
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
                     <div class="single-service-cap text-center" style="padding: 30px 20px; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 10px; height: 100%;">
                         <i class="fas fa-layer-group" style="font-size: 40px; color: #F2813F; margin-bottom: 15px;"></i>
@@ -199,7 +215,6 @@
                         <a href="#catalogo" class="more-btn" style="color: #25D366; font-weight: 600;">Ver en catálogo <i class="fas fa-arrow-down" style="font-size: 12px; margin-left: 5px;"></i></a>
                     </div>
                 </div>
-                <!-- Categoria 2 -->
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
                     <div class="single-service-cap text-center" style="padding: 30px 20px; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 10px; height: 100%;">
                         <i class="fas fa-tractor" style="font-size: 40px; color: #F2813F; margin-bottom: 15px;"></i>
@@ -208,7 +223,6 @@
                         <a href="#catalogo" class="more-btn" style="color: #25D366; font-weight: 600;">Ver en catálogo <i class="fas fa-arrow-down" style="font-size: 12px; margin-left: 5px;"></i></a>
                     </div>
                 </div>
-                <!-- Categoria 3 -->
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
                     <div class="single-service-cap text-center" style="padding: 30px 20px; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 10px; height: 100%;">
                         <i class="fas fa-hammer" style="font-size: 40px; color: #F2813F; margin-bottom: 15px;"></i>
@@ -220,415 +234,316 @@
             </div>
         </div>
     </div>
-    <!-- Lineas de Equipo End -->
 
-    <!-- Garantias Start -->
+    <!-- Garantías / Por qué elegirnos Start -->
     <section class="features-area section-padding30" style="background-color: white;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-tittle text-center mb-50">
+                        <div class="front-text">
+                            <h2 class="">¿Por qué elegir AndaZac?</h2>
+                        </div>
+                        <span class="back-text">CONFIANZA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single-service-cap text-center" style="padding: 40px 20px; background: #f7f7fd; border-radius: 10px; height: 100%;">
+                        <i class="fas fa-truck" style="font-size: 50px; color: #F2813F; margin-bottom: 20px;"></i>
+                        <h4 style="color: #453528; font-weight: 700; font-size: 20px; margin-bottom: 15px;">Entrega Puntual</h4>
+                        <p style="color: #666; font-size: 16px;">Llevamos y recogemos el equipo en tu obra en los tiempos acordados para que tu proyecto jamás se detenga.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single-service-cap text-center" style="padding: 40px 20px; background: #f7f7fd; border-radius: 10px; height: 100%;">
+                        <i class="fas fa-shield-alt" style="font-size: 50px; color: #F2813F; margin-bottom: 20px;"></i>
+                        <h4 style="color: #453528; font-weight: 700; font-size: 20px; margin-bottom: 15px;">Equipo Seguro</h4>
+                        <p style="color: #666; font-size: 16px;">Nuestros andamios y maquinaria reciben revisión y mantenimiento constante para garantizar la seguridad.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single-service-cap text-center" style="padding: 40px 20px; background: #f7f7fd; border-radius: 10px; height: 100%;">
+                        <i class="fas fa-tools" style="font-size: 50px; color: #F2813F; margin-bottom: 20px;"></i>
+                        <h4 style="color: #453528; font-weight: 700; font-size: 20px; margin-bottom: 15px;">Soporte Técnico</h4>
+                        <p style="color: #666; font-size: 16px;">Te asesoramos en la elección y armado correcto del equipo ideal para cubrir tus necesidades constructivas.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
+    </section>
 
-        <!-- Sección de Precios / Paquetes Start -->
-        <section class="pricing-area section-padding30" id="precios" style="background-color: white;">
-            <div class="container">
-                <div class="row justify-content-center">
+    <!-- Catálogo Dinámico Area Start -->
+    <section class="project-area section-padding30" id="catalogo" style="background: #f7f7fd;">
+        <div class="container">
+            <div class="project-heading mb-35">
+                <div class="row align-items-end">
                     <div class="col-lg-6">
-                        <div class="section-tittle text-center mb-50">
+                        <div class="section-tittle mb-50">
                             <div class="front-text">
-                                <h2 class="">Paquetes de Renta</h2>
+                                <h2 class="">Catálogo de Equipos</h2>
                             </div>
-                            <span class="back-text">COTIZACIÓN</span>
-                            <p style="margin-top: 20px; color: #453528;">Precios de referencia para nuestros módulos más solicitados. El precio final puede variar según los días y la cantidad de equipo.</p>
+                            <span class="back-text">INVENTARIO</span>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                        <div class="pricing-card text-center">
-                            <div class="pricing-header">
-                                <h3>Módulo Básico</h3>
-                                <div class="price">
-                                    <span>$</span>250<span class="period">/ semana</span>
+                    <div class="col-lg-6">
+                        <div class="properties__button">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-todos-tab" data-toggle="tab" href="#nav-todos" role="tab" aria-controls="nav-todos" aria-selected="true">Todos</a>
+                                    <a class="nav-item nav-link" id="nav-andamios-tab" data-toggle="tab" href="#nav-andamios" role="tab" aria-controls="nav-andamios" aria-selected="false">Andamios</a>
+                                    <a class="nav-item nav-link" id="nav-maquinaria-tab" data-toggle="tab" href="#nav-maquinaria" role="tab" aria-controls="nav-maquinaria" aria-selected="false">Maquinaria</a>
+                                    <a class="nav-item nav-link" id="nav-demolicion-tab" data-toggle="tab" href="#nav-demolicion" role="tab" aria-controls="nav-demolicion" aria-selected="false">Demolición</a>
+                                    <a class="nav-item nav-link" id="nav-otros-tab" data-toggle="tab" href="#nav-otros" role="tab" aria-controls="nav-otros" aria-selected="false">Otros</a>
                                 </div>
-                            </div>
-                            <ul class="pricing-list">
-                                <li><i class="fas fa-check"></i> 2 Marcos de Acero</li>
-                                <li><i class="fas fa-check"></i> 2 Crucetas</li>
-                                <li><i class="fas fa-check"></i> 4 Coples de unión</li>
-                                <li class="text-muted"><i class="fas fa-times"></i> Sin plataforma</li>
-                                <li class="text-muted"><i class="fas fa-times"></i> Sin ruedas</li>
-                            </ul>
-                            <a href="https://wa.me/524922253074?text=Hola,%20me%20interesa%20rentar%20el%20Módulo%20Básico" target="_blank" class="btn btn-whatsapp w-100"><i class="fab fa-whatsapp"></i> Lo quiero</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                        <div class="pricing-card featured text-center">
-                            <div class="pricing-badge">Más Rentado</div>
-                            <div class="pricing-header">
-                                <h3>Módulo Trabajo</h3>
-                                <div class="price">
-                                    <span>$</span>450<span class="period">/ semana</span>
-                                </div>
-                            </div>
-                            <ul class="pricing-list">
-                                <li><i class="fas fa-check"></i> 2 Marcos de Acero</li>
-                                <li><i class="fas fa-check"></i> 2 Crucetas</li>
-                                <li><i class="fas fa-check"></i> 1 Plataforma (Hamaca)</li>
-                                <li><i class="fas fa-check"></i> 4 Gatos ajustables</li>
-                                <li class="text-muted"><i class="fas fa-times"></i> Sin ruedas</li>
-                            </ul>
-                            <a href="https://wa.me/524922253074?text=Hola,%20me%20interesa%20rentar%20el%20Módulo%20de%20Trabajo" target="_blank" class="btn btn-whatsapp w-100"><i class="fab fa-whatsapp"></i> Lo quiero</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                        <div class="pricing-card text-center">
-                            <div class="pricing-header">
-                                <h3>Torre Móvil</h3>
-                                <div class="price">
-                                    <span>$</span>700<span class="period">/ semana</span>
-                                </div>
-                            </div>
-                            <ul class="pricing-list">
-                                <li><i class="fas fa-check"></i> 4 Marcos de Acero</li>
-                                <li><i class="fas fa-check"></i> 4 Crucetas</li>
-                                <li><i class="fas fa-check"></i> 2 Plataformas (Hamacas)</li>
-                                <li><i class="fas fa-check"></i> 4 Ruedas con freno</li>
-                                <li><i class="fas fa-check"></i> Barandal de seguridad</li>
-                            </ul>
-                            <a href="https://wa.me/524922253074?text=Hola,%20me%20interesa%20rentar%20la%20Torre%20Móvil" target="_blank" class="btn btn-whatsapp w-100"><i class="fab fa-whatsapp"></i> Lo quiero</a>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-content active" id="nav-tabContent">
 
-        <!-- Garantías / Por qué elegirnos Start -->
-        <section class="features-area section-padding30" style="background-color: #f7f7fd;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-tittle text-center mb-50">
-                            <div class="front-text">
-                                <h2 class="">¿Por qué elegir AndaZac?</h2>
-                            </div>
-                            <span class="back-text">CONFIANZA</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Feature 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="single-service-cap text-center" style="padding: 40px 20px; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 10px; height: 100%;">
-                            <i class="fas fa-truck" style="font-size: 50px; color: #F2813F; margin-bottom: 20px;"></i>
-                            <h4 style="color: #453528; font-weight: 700; font-size: 20px; margin-bottom: 15px;">Entrega Puntual</h4>
-                            <p style="color: #666; font-size: 16px;">Llevamos y recogemos el equipo en tu obra en los tiempos acordados para que tu proyecto jamás se detenga.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="single-service-cap text-center" style="padding: 40px 20px; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 10px; height: 100%;">
-                            <i class="fas fa-shield-alt" style="font-size: 50px; color: #F2813F; margin-bottom: 20px;"></i>
-                            <h4 style="color: #453528; font-weight: 700; font-size: 20px; margin-bottom: 15px;">Equipo Seguro</h4>
-                            <p style="color: #666; font-size: 16px;">Nuestros andamios y maquinaria reciben revisión y mantenimiento constante para garantizar la seguridad de tus trabajadores.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 3 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="single-service-cap text-center" style="padding: 40px 20px; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 10px; height: 100%;">
-                            <i class="fas fa-tools" style="font-size: 50px; color: #F2813F; margin-bottom: 20px;"></i>
-                            <h4 style="color: #453528; font-weight: 700; font-size: 20px; margin-bottom: 15px;">Soporte Técnico</h4>
-                            <p style="color: #666; font-size: 16px;">Te asesoramos en la elección, capacidades y armado correcto del equipo ideal para cubrir tus necesidades constructivas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Garantias End -->
-
-        <!-- Catalogo Dinamico Area Start -->
-        <section class="project-area section-padding30" id="catalogo" style="background: white;">
-            <div class="container">
-                <div class="project-heading mb-35">
-                    <div class="row align-items-end">
-                        <div class="col-lg-6">
-                            <div class="section-tittle mb-50">
-                                <div class="front-text">
-                                    <h2 class="">Nuestra Experiencia</h2>
-                                </div>
-                                <span class="back-text">CATÁLOGO</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="properties__button">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-todos-tab" data-toggle="tab" href="#nav-todos" role="tab" aria-controls="nav-todos" aria-selected="true">Todos</a>
-                                        <a class="nav-item nav-link" id="nav-andamios-tab" data-toggle="tab" href="#nav-andamios" role="tab" aria-controls="nav-andamios" aria-selected="false">Andamios</a>
-                                        <a class="nav-item nav-link" id="nav-maquinaria-tab" data-toggle="tab" href="#nav-maquinaria" role="tab" aria-controls="nav-maquinaria" aria-selected="false">Maquinaria</a>
-                                        <a class="nav-item nav-link" id="nav-demolicion-tab" data-toggle="tab" href="#nav-demolicion" role="tab" aria-controls="nav-demolicion" aria-selected="false">Demolición</a>
-                                        <a class="nav-item nav-link" id="nav-otros-tab" data-toggle="tab" href="#nav-otros" role="tab" aria-controls="nav-otros" aria-selected="false">Otros</a>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tab-content active" id="nav-tabContent">
-
-                            <!-- Pestaña: TODOS -->
-                            <div class="tab-pane fade active show" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6" th:each="producto : ${productos}">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
-                                                    <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
-                                                </div>
+                        <!-- Pestaña: TODOS -->
+                        <div class="tab-pane fade active show" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
+                            <div class="project-caption">
+                                <div class="row">
+                                    <!-- En celular usamos col-6 para mostrar 2 columnas -->
+                                    <div class="col-lg-4 col-md-6 col-6" th:each="producto : ${productos}">
+                                        <div class="single-project mb-30">
+                                            <div class="project-img" style="cursor: pointer;" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}">
+                                                <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
+                                            </div>
+                                            <div class="project-cap">
+                                                <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
+                                                <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Pestaña: ANDAMIOS -->
-                            <div class="tab-pane fade" id="nav-andamios" role="tabpanel" aria-labelledby="nav-andamios-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6" th:each="producto : ${productos.?[categoria == 'Andamios']}">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
-                                                    <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pestaña: MAQUINARIA -->
-                            <div class="tab-pane fade" id="nav-maquinaria" role="tabpanel" aria-labelledby="nav-maquinaria-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6" th:each="producto : ${productos.?[categoria == 'Maquinaria']}">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
-                                                    <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pestaña: DEMOLICION -->
-                            <div class="tab-pane fade" id="nav-demolicion" role="tabpanel" aria-labelledby="nav-demolicion-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6" th:each="producto : ${productos.?[categoria == 'Demolicion']}">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
-                                                    <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pestaña: OTROS -->
-                            <div class="tab-pane fade" id="nav-otros" role="tabpanel" aria-labelledby="nav-otros-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6" th:each="producto : ${productos.?[categoria == 'Otros']}">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
-                                                    <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <!-- Pestaña: ANDAMIOS -->
+                        <div class="tab-pane fade" id="nav-andamios" role="tabpanel" aria-labelledby="nav-andamios-tab">
+                            <div class="project-caption">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6" th:each="producto : ${productos.?[categoria == 'Andamios']}">
+                                        <div class="single-project mb-30">
+                                            <div class="project-img" style="cursor: pointer;" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}">
+                                                <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
+                                            </div>
+                                            <div class="project-cap">
+                                                <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
+                                                <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pestaña: MAQUINARIA -->
+                        <div class="tab-pane fade" id="nav-maquinaria" role="tabpanel" aria-labelledby="nav-maquinaria-tab">
+                            <div class="project-caption">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6" th:each="producto : ${productos.?[categoria == 'Maquinaria']}">
+                                        <div class="single-project mb-30">
+                                            <div class="project-img" style="cursor: pointer;" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}">
+                                                <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
+                                            </div>
+                                            <div class="project-cap">
+                                                <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
+                                                <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pestaña: DEMOLICIÓN -->
+                        <div class="tab-pane fade" id="nav-demolicion" role="tabpanel" aria-labelledby="nav-demolicion-tab">
+                            <div class="project-caption">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6" th:each="producto : ${productos.?[categoria == 'Demolicion']}">
+                                        <div class="single-project mb-30">
+                                            <div class="project-img" style="cursor: pointer;" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}">
+                                                <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
+                                            </div>
+                                            <div class="project-cap">
+                                                <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
+                                                <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pestaña: OTROS -->
+                        <div class="tab-pane fade" id="nav-otros" role="tabpanel" aria-labelledby="nav-otros-tab">
+                            <div class="project-caption">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6" th:each="producto : ${productos.?[categoria == 'Otros']}">
+                                        <div class="single-project mb-30">
+                                            <div class="project-img" style="cursor: pointer;" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}">
+                                                <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}">
+                                            </div>
+                                            <div class="project-cap">
+                                                <a href="javascript:void(0)" class="plus-btn" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}"><i class="ti-plus"></i></a>
+                                                <h4><a href="javascript:void(0)" data-toggle="modal" th:data-target="'#modalProducto' + ${producto.id}" th:text="${producto.nombre}">Nombre</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Preguntas Frecuentes Start -->
-        <section class="faq-area section-padding30" id="faq" style="background-color: #f7f7fd;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-tittle text-center mb-50">
-                            <div class="front-text">
-                                <h2 class="">Preguntas Frecuentes</h2>
-                            </div>
-                            <span class="back-text">DUDAS</span>
+    <!-- Preguntas Frecuentes (FAQ) Start -->
+    <section class="faq-area section-padding30" id="faq" style="background-color: white;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-tittle text-center mb-50">
+                        <div class="front-text">
+                            <h2 class="">Preguntas Frecuentes</h2>
                         </div>
-
-                        <div class="accordion" id="accordionFAQ">
-                            <!-- Pregunta 1 -->
-                            <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                                <div class="card-header" id="headingOne" style="background-color: white; border-bottom: none; border-radius: 5px; padding: 0;">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
-                                            <i class="fas fa-calendar-alt" style="color: #F2813F; margin-right: 10px;"></i> ¿Rentan por día, semana o mes?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
-                                    <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #f9f9f9; padding: 20px 20px 20px 45px;">
-                                        Ofrecemos total flexibilidad. Cotizamos el tiempo exacto que requieras: por día, semana o mes, ajustándonos al cronograma de tu obra para que pagues únicamente lo justo.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 2 -->
-                            <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                                <div class="card-header" id="headingTwo" style="background-color: white; border-bottom: none; border-radius: 5px; padding: 0;">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
-                                            <i class="fas fa-truck-loading" style="color: #F2813F; margin-right: 10px;"></i> ¿El servicio de flete viene incluido?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
-                                    <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #f9f9f9; padding: 20px 20px 20px 45px;">
-                                        Contamos con servicio de flete para entregar y recoger el equipo a pie de obra en Zacatecas y municipios aledaños. Este servicio tiene un costo preferencial adicional al precio de renta, que se calcula según la distancia.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 3 -->
-                            <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                                <div class="card-header" id="headingThree" style="background-color: white; border-bottom: none; border-radius: 5px; padding: 0;">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
-                                            <i class="fas fa-file-signature" style="color: #F2813F; margin-right: 10px;"></i> ¿Piden depósito en garantía o cuáles son los requisitos?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
-                                    <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #f9f9f9; padding: 20px 20px 20px 45px;">
-                                        Sí, para seguridad de ambas partes solicitamos una copia de tu identificación oficial (INE), comprobante de domicilio reciente y un depósito en garantía. Este depósito es 100% reembolsable al finalizar el contrato y devolver el equipo.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pregunta 4 -->
-                            <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
-                                <div class="card-header" id="headingFour" style="background-color: white; border-bottom: none; border-radius: 5px; padding: 0;">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
-                                            <i class="fas fa-file-invoice-dollar" style="color: #F2813F; margin-right: 10px;"></i> ¿Emiten factura por el servicio?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFAQ">
-                                    <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #f9f9f9; padding: 20px 20px 20px 45px;">
-                                        ¡Claro! Todos nuestros servicios pueden ser facturados sin problema. Solo compártenos tu Constancia de Situación Fiscal y datos de uso de CFDI al momento de contratar. Toma en cuenta que los precios de lista mostrados no incluyen IVA.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Preguntas Frecuentes End -->
-
-        <!-- Area de Contacto Directo Start -->
-        <section class="contact-with-area section-padding30" id="contacto" style="background-color: white;">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-
-                    <div class="col-xl-5 col-lg-6 mb-50 mb-lg-0">
-                        <div class="contact-us-caption">
-                            <div class="section-tittle section-tittle4 mb-30">
-                                <div class="front-text">
-                                    <h2>Hablemos de tu obra</h2>
-                                </div>
-                                <span class="back-text" style="font-size: clamp(40px, 8vw, 70px) !important;">ZACATECAS</span>
-                            </div>
-                            <p style="color: #453528; font-size: 18px; margin-bottom: 30px;">Estamos listos para brindarte la mejor solución en andamiaje para tu proyecto. Contáctanos hoy mismo para una cotización rápida y sin compromiso.</p>
-
-                            <a href="https://wa.me/524922253074?text=Hola,%20me%20interesa%20cotizar%20la%20renta%20de%20andamios" target="_blank" class="btn btn-whatsapp" style="font-size: 18px;"><i class="fab fa-whatsapp"></i> Cotizar por WhatsApp</a>
-                        </div>
+                        <span class="back-text">DUDAS</span>
                     </div>
 
-                    <div class="col-xl-6 col-lg-6 offset-xl-1">
-                        <div class="map-container" style="border-radius: 10px; overflow: hidden; box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118059.90799650081!2d-102.66355655!3d22.753896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86824e892c55b6bd%3A0x6b4fbca38dc813cc!2sZacatecas%2C%20Zac.!5e0!3m2!1ses-419!2smx!4v1709400000000!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- =========================================================================
-             MODALES DE PRODUCTOS
-             ========================================================================= -->
-        <div th:each="producto : ${productos}">
-            <div class="modal fade" th:id="'modalProducto' + ${producto.id}" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content" style="border-radius: 10px; border: none; box-shadow: 0px 10px 30px rgba(0,0,0,0.2);">
-
-                        <!-- Header del Modal -->
-                        <div class="modal-header" style="background-color: #f7f7fd; border-bottom: 1px solid #eee;">
-                            <h5 class="modal-title" th:text="${producto.nombre}" style="color: #F2813F; font-weight: 700; font-size: 24px; font-family: 'Teko', sans-serif;">Nombre del Equipo</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar" style="color: #453528;">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                    <div class="accordion" id="accordionFAQ">
+                        <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                            <div class="card-header" id="headingOne" style="background-color: #f7f7fd; border-bottom: none; border-radius: 5px; padding: 0;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
+                                        <i class="fas fa-calendar-alt" style="color: #F2813F; margin-right: 10px;"></i> ¿Rentan por día, semana o mes?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                                <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #eee; padding: 20px 20px 20px 45px;">
+                                    Ofrecemos total flexibilidad. Cotizamos el tiempo exacto que requieras: por día, semana o mes, ajustándonos al cronograma de tu obra para que pagues únicamente lo justo.
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Cuerpo del Modal (Imagen y Descripcion) -->
-                        <div class="modal-body text-center p-4">
-                            <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}" class="img-fluid mb-4" style="max-height: 250px; border-radius: 5px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);">
-                            <p th:text="${producto.descripcion}" style="color: #453528; font-size: 16px; text-align: justify;">Descripción técnica del equipo que cargamos desde la base de datos.</p>
+                        <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                            <div class="card-header" id="headingTwo" style="background-color: #f7f7fd; border-bottom: none; border-radius: 5px; padding: 0;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
+                                        <i class="fas fa-truck-loading" style="color: #F2813F; margin-right: 10px;"></i> ¿El servicio de flete viene incluido?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                                <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #eee; padding: 20px 20px 20px 45px;">
+                                    Contamos con servicio de flete para entregar y recoger el equipo a pie de obra en Zacatecas y municipios aledaños. Este servicio tiene un costo preferencial adicional al precio de renta, que se calcula según la distancia.
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Footer del Modal (Boton de Accion) -->
-                        <div class="modal-footer justify-content-center" style="border-top: none; padding-bottom: 30px;">
-                            <!-- Usamos th:href para concatenar dinámicamente el nombre del producto en el mensaje de WhatsApp -->
-                            <a th:href="'https://wa.me/524922253074?text=Hola,%20me%20interesa%20rentar%20el%20equipo:%20' + ${producto.nombre}" target="_blank" class="btn btn-whatsapp w-100" style="font-size: 16px;">
-                                <i class="fab fa-whatsapp"></i> Me interesa cotizar este equipo
-                            </a>
+                        <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                            <div class="card-header" id="headingThree" style="background-color: #f7f7fd; border-bottom: none; border-radius: 5px; padding: 0;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
+                                        <i class="fas fa-file-signature" style="color: #F2813F; margin-right: 10px;"></i> ¿Piden depósito en garantía o cuáles son los requisitos?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                                <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #eee; padding: 20px 20px 20px 45px;">
+                                    Sí, para seguridad de ambas partes solicitamos una copia de tu identificación oficial (INE), comprobante de domicilio reciente y un depósito en garantía. Este depósito es 100% reembolsable al finalizar el contrato y devolver el equipo.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="border: none; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                            <div class="card-header" id="headingFour" style="background-color: #f7f7fd; border-bottom: none; border-radius: 5px; padding: 0;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: #453528; font-weight: 600; font-size: 18px; text-decoration: none; padding: 20px;">
+                                        <i class="fas fa-file-invoice-dollar" style="color: #F2813F; margin-right: 10px;"></i> ¿Emiten factura por el servicio?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFAQ">
+                                <div class="card-body" style="color: #666; font-size: 16px; border-top: 1px solid #eee; padding: 20px 20px 20px 45px;">
+                                    ¡Claro! Todos nuestros servicios pueden ser facturados sin problema. Solo compártenos tu Constancia de Situación Fiscal y datos de uso de CFDI al momento de contratar. Toma en cuenta que los precios de lista mostrados no incluyen IVA.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Fin Modales de Productos -->
+    </section>
 
+    <!-- Área de Contacto Directo Start -->
+    <section class="contact-with-area section-padding30" id="contacto" style="background-color: #f7f7fd;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-xl-5 col-lg-6 mb-50 mb-lg-0">
+                    <div class="contact-us-caption">
+                        <div class="section-tittle section-tittle4 mb-30">
+                            <div class="front-text">
+                                <h2>Hablemos de tu obra</h2>
+                            </div>
+                            <span class="back-text" style="font-size: clamp(40px, 8vw, 70px) !important;">ZACATECAS</span>
+                        </div>
+                        <p style="color: #453528; font-size: 18px; margin-bottom: 30px;">Estamos listos para brindarte la mejor solución en andamiaje y maquinaria para tu proyecto. Contáctanos hoy mismo para una cotización rápida y sin compromiso.</p>
+
+                        <a href="https://wa.me/52492123456?text=Hola,%20me%20interesa%20cotizar%20la%20renta%20de%20equipo" target="_blank" class="btn btn-whatsapp" style="font-size: 18px;"><i class="fab fa-whatsapp"></i> Cotizar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 offset-xl-1">
+                    <div class="map-container" style="border-radius: 10px; overflow: hidden; box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118059.90799650081!2d-102.66355655!3d22.753896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86824e892c55b6bd%3A0x6b4fbca38dc813cc!2sZacatecas%2C%20Zac.!5e0!3m2!1ses-419!2smx!4v1709400000000!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         MODALES DE PRODUCTOS (Se generan ocultos al final de la página)
+         ========================================================================= -->
+    <div th:each="producto : ${productos}">
+        <div class="modal fade" th:id="'modalProducto' + ${producto.id}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 10px; border: none; box-shadow: 0px 10px 30px rgba(0,0,0,0.2);">
+
+                    <div class="modal-header" style="background-color: #f7f7fd; border-bottom: 1px solid #eee;">
+                        <h5 class="modal-title" th:text="${producto.nombre}" style="color: #F2813F; font-weight: 700; font-size: 24px; font-family: 'Teko', sans-serif;">Nombre del Equipo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar" style="color: #453528;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body text-center p-4">
+                        <img th:src="${producto.imagenUrl}" th:alt="${producto.nombre}" class="img-fluid mb-4" style="max-height: 250px; border-radius: 5px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);">
+                        <p th:text="${producto.descripcion}" style="color: #453528; font-size: 16px; text-align: justify;">Descripción técnica del equipo.</p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center" style="border-top: none; padding-bottom: 30px;">
+                        <a th:href="'https://wa.me/52492123456?text=Hola,%20me%20interesa%20rentar%20el%20equipo:%20' + ${producto.nombre}" target="_blank" class="btn btn-whatsapp w-100" style="font-size: 16px;">
+                            <i class="fab fa-whatsapp"></i> Me interesa cotizar este equipo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
@@ -639,7 +554,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-8">
                         <div class="single-footer-caption mb-30">
                             <div class="footer-logo">
-                                <a><img src="assets/img/logo/ldelogo.png" alt="Andazac Logo" style="max-width: 200px; background-color: white; padding: 10px; border-radius: 5px;"></a>
+                                <a href="index.html"><img src="assets/img/logo/ldelogo.png" alt="Andazac Logo" style="max-width: 200px; background-color: white; padding: 10px; border-radius: 5px;"></a>
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
@@ -657,9 +572,9 @@
                                     <p class="info1">Zacatecas, Zacatecas, México.</p>
                                 </div>
                                 <ul>
-                                    <li><a href="tel:+524922253074"><i class="fas fa-phone"></i> +52 (492) 225 3074</a></li>
-                                    <li><a href="https://wa.me/524922253074" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Directo</a></li>
-                                    <li><a href="mailto:"><i class="fas fa-envelope"></i> contacto@andazac.com</a></li>
+                                    <li><a href="tel:+52492123456"><i class="fas fa-phone"></i> +52 (492) 123 456</a></li>
+                                    <li><a href="https://wa.me/52492123456" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Directo</a></li>
+                                    <li><a href="mailto:contacto@andazac.com"><i class="fas fa-envelope"></i> contacto@andazac.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -670,38 +585,33 @@
     </div>
 </footer>
 
-<!-- Boton Flotante de WhatsApp -->
-<a href="https://wa.me/524922253074?text=Hola,%20estoy%20en%20su%20sitio%20web%20y%20necesito%20información%20sobre%20renta%20de%20equipos" class="whatsapp-flotante" target="_blank">
+<!-- Botón Flotante de WhatsApp -->
+<a href="https://wa.me/52492123456?text=Hola,%20estoy%20en%20su%20sitio%20web%20y%20necesito%20información%20sobre%20renta%20de%20equipos" class="whatsapp-flotante" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- JS here -->
+<!-- JS -->
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="./assets/js/popper.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/jquery.slicknav.min.js"></script>
-
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/slick.min.js"></script>
 <script src="./assets/js/gijgo.min.js"></script>
 <script src="./assets/js/wow.min.js"></script>
 <script src="./assets/js/animated.headline.js"></script>
 <script src="./assets/js/jquery.magnific-popup.js"></script>
-
 <script src="./assets/js/jquery.scrollUp.min.js"></script>
 <script src="./assets/js/jquery.nice-select.min.js"></script>
 <script src="./assets/js/jquery.sticky.js"></script>
-
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="./assets/js/jquery.counterup.min.js"></script>
-
 <script src="./assets/js/contact.js"></script>
 <script src="./assets/js/jquery.form.js"></script>
 <script src="./assets/js/jquery.validate.min.js"></script>
 <script src="./assets/js/mail-script.js"></script>
 <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
 
